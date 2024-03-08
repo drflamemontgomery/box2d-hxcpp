@@ -24,7 +24,6 @@ extern class B2Filter {
 @:include("box2d/box2d.h")
 @:native("b2FixtureDef")
 extern class B2FixtureDef {
-  @:native("new B2FixtureDef") public static function create() : cpp.Pointer<B2FixtureDef>;
   public var shape : cpp.ConstPointer<B2Shape>;
   public var userData : B2FixtureUserData;
   public var friction : Float;

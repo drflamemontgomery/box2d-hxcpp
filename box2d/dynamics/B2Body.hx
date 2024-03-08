@@ -43,6 +43,7 @@ extern class B2BodyDef {
 @:native("b2Body")
 extern class B2Body {
   @:native("GetPosition") public function getPosition() : B2Vec2;
+  @:native("GetAngle") public function getAngle() : Float;
   @:native("GetMass") public function getMass() : Float;
   @:native("CreateFixture") public function createFixture(def:cpp.ConstPointer<B2FixtureDef>) : cpp.ConstPointer<B2Fixture>;
   @:native("GetNext") public function getNext() : cpp.ConstPointer<B2Body>;
